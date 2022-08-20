@@ -27,5 +27,8 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
 }
