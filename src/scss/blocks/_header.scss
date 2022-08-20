@@ -1,0 +1,7 @@
+.header {
+  @extend .row-wrapper;
+  &__logo {
+    @include make-col(12);
+    align-content: start;
+  }
+}

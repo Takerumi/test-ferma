@@ -9,3 +9,19 @@
     }
   }
 }
+
+// Общий класс для контейнера
+.container {
+  @include make-container();
+  @include make-max-width-container();
+}
+
+// Общий класс для строк
+.row-wrapper {
+  @include make-row();
+  --bs-gutter-y: 1rem;
+
+  & > * {
+    @include make-col-ready();
+  }
+}

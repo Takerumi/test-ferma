@@ -1,11 +1,15 @@
 // Ипорт сетки Bootstrap
-@import '//node_modules/bootstrap/scss/bootstrap-reboot';
-@import '//node_modules/bootstrap/scss/functions';
-@import '//node_modules/bootstrap/scss/variables';
-@import '//node_modules/bootstrap/scss/mixins/breakpoints';
-@import '//node_modules/bootstrap/scss/mixins/container';
-@import '//node_modules/bootstrap/scss/mixins/grid';
+@import 'bootstrap-reboot';
+@import 'functions';
+@import 'variables';
+@import 'mixins/breakpoints';
+@import 'mixins/container';
+@import 'mixins/grid';
+
 // Импорт базовых стилей
 @import 'base/general';
 @import 'base/fonts';
+
 // Импорт блоков
+@import 'blocks/header';
+@import 'blocks/main';
