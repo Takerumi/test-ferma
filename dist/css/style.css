@@ -548,6 +548,18 @@ progress {
   max-height: 64rem;
 }
 
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 94%;
+  color: #1f294a;
+}
+
+.intro {
+  padding-top: 1.241875rem;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;

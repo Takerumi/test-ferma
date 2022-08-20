@@ -9,7 +9,10 @@
 // Импорт базовых стилей
 @import 'base/general';
 @import 'base/fonts';
+@import 'base/variables';
 
 // Импорт блоков
 @import 'blocks/header';
 @import 'blocks/main';
+@import 'blocks/headings';
+@import 'blocks/intro';
