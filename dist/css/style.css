@@ -530,6 +530,10 @@ progress {
   font-display: swap;
 }
 
+.header {
+  padding-top: 4.75rem;
+}
+
 .header__logo {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -585,6 +589,10 @@ progress {
 
   .container {
     max-width: 1140px;
+  }
+
+  .container {
+    margin: 0 7rem;
   }
 }
 

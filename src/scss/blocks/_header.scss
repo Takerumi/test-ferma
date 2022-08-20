@@ -1,5 +1,6 @@
 .header {
   @extend .row-wrapper;
+  padding-top: 4.75rem;
   &__logo {
     @include make-col(12);
     align-content: start;
