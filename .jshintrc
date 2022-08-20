@@ -1,0 +1,13 @@
+{
+    "camelcase" : true,
+    "undef" : true,
+    "maxlen" : 120,
+    "trailing" : true,
+    "curly" : true,
+    "browser" : true,
+    "devel" : true, 
+    "esversion" : 10,
+    "node" : true,
+    "quotmark": "single",
+    "asi": true
+}
