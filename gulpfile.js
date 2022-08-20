@@ -18,19 +18,16 @@ const projectFolder = 'dist',
       css: `${sourceFolder}/scss/**/*.scss`,
       img: `${sourceFolder}/img/**/*.{jpg,png,svg,gif,ico,webp}`,
     },
-    clean: `./${projectFolder}/`,
   }
 
 const { src, dest } = require('gulp'),
   gulp = require('gulp'),
   browsersync = require('browser-sync').create(),
-  del = require('del'),
   scss = require('gulp-sass')(require('sass')),
   autoprefixer = require('gulp-autoprefixer'),
   groupMedia = require('gulp-group-css-media-queries'),
   cleanCss = require('gulp-clean-css'),
-  rename = require('gulp-rename'),
-  imageMin = require('gulp-imagemin')
+  rename = require('gulp-rename')
 
 function browserSync(params) {
   browsersync.init({
@@ -75,17 +72,7 @@ function css() {
 }
 
 function images() {
-  return src(path.src.img)
-    .pipe(
-      imageMin({
-        progressive: true,
-        svgoPlugins: [{ removeViewBox: false }],
-        interlaced: true,
-        optimizationLevel: 3,
-      })
-    )
-    .pipe(dest(path.build.img))
-    .pipe(browsersync.stream())
+  return src(path.src.img).pipe(dest(path.build.img)).pipe(browsersync.stream())
 }
 
 function fonts() {
@@ -98,12 +85,8 @@ function watchFiles(params) {
   gulp.watch([path.watch.img], images)
 }
 
-function clean(params) {
-  return del(path.clean)
-}
-
 const build = gulp.series(gulp.parallel(html, css, images, fonts)),
-  watch = gulp.parallel(clean, build, watchFiles, browserSync)
+  watch = gulp.parallel(build, watchFiles, browserSync)
 
 exports.fonts = fonts
 exports.images = images
