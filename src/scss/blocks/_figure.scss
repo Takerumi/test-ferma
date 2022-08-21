@@ -3,49 +3,24 @@
   &__phone {
     position: absolute;
     z-index: 10;
-    top: 0rem;
+    width: 100%;
+    height: auto;
+    max-width: 45.8125rem;
+    // top: 0rem;
     right: 0rem;
+
+    @include media-breakpoint-up(md) {
+    }
   }
 
-  &__blue-circle-big {
-    position: absolute;
-    z-index: 3;
-    top: 9.44875rem;
-    right: 21.489375rem;
-  }
+  &__circles {
+    width: 100%;
+    height: auto;
+    max-width: 36.2725rem;
 
-  &__green-circle-big {
-    position: absolute;
-    z-index: 2;
-    top: 9.75rem;
-    right: 7.8125rem;
-  }
-
-  &__pink-circle-big {
-    position: absolute;
-    z-index: 1;
-    top: 4.25rem;
-    right: 10.3125rem;
-  }
-
-  &__blue-circle-small {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    right: 10.045625rem;
-  }
-
-  &__green-circle-small {
-    position: absolute;
-    z-index: 1;
-    top: 22.5rem;
-    right: 39.983125rem;
-  }
-
-  &__pink-circle-small {
-    position: absolute;
-    z-index: 1;
-    top: 39.8125rem;
-    right: 6.29rem;
+    @include media-breakpoint-up(md) {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }

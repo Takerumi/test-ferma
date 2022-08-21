@@ -1,6 +1,10 @@
 .header {
-  padding: 3.75rem 0 0 0.5rem;
+  padding: 2rem 0 0 0.5rem;
+
   @include media-breakpoint-up(md) {
+    padding-top: 3rem;
+  }
+  @include media-breakpoint-up(lg) {
     padding-top: 4.75rem;
   }
   &__logo {

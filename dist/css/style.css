@@ -531,7 +531,7 @@ progress {
 }
 
 .header {
-  padding: 3.75rem 0 0 0.5rem;
+  padding: 2rem 0 0 0.5rem;
 }
 
 .header__logo img {
@@ -542,23 +542,24 @@ progress {
 
 .main {
   background: url("../img/bg.jpg") center center/cover no-repeat;
-  max-height: 64rem;
+  min-height: 64rem;
 }
 
-.intro__descr {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 100%;
+.intro {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  --bs-gutter-y: 0;
 }
 
 .intro__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   line-height: 94%;
   color: #1f294a;
-  padding-top: 4.491875rem;
+  margin-top: -2.5rem;
 }
 
 .intro__list {
@@ -569,7 +570,7 @@ progress {
 .intro__elem {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   line-height: 1.9375rem;
   color: #1f294a;
 }
@@ -595,10 +596,7 @@ progress {
 }
 
 .intro__pic {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 100%;
+  padding-top: 3rem;
 }
 
 .btn {
@@ -617,50 +615,16 @@ progress {
 .figure__phone {
   position: absolute;
   z-index: 10;
-  top: 0rem;
+  width: 100%;
+  height: auto;
+  max-width: 45.8125rem;
   right: 0rem;
 }
 
-.figure__blue-circle-big {
-  position: absolute;
-  z-index: 3;
-  top: 9.44875rem;
-  right: 21.489375rem;
-}
-
-.figure__green-circle-big {
-  position: absolute;
-  z-index: 2;
-  top: 9.75rem;
-  right: 7.8125rem;
-}
-
-.figure__pink-circle-big {
-  position: absolute;
-  z-index: 1;
-  top: 4.25rem;
-  right: 10.3125rem;
-}
-
-.figure__blue-circle-small {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 10.045625rem;
-}
-
-.figure__green-circle-small {
-  position: absolute;
-  z-index: 1;
-  top: 22.5rem;
-  right: 39.983125rem;
-}
-
-.figure__pink-circle-small {
-  position: absolute;
-  z-index: 1;
-  top: 39.8125rem;
-  right: 6.29rem;
+.figure__circles {
+  width: 100%;
+  height: auto;
+  max-width: 36.2725rem;
 }
 
 @media (min-width: 576px) {
@@ -683,13 +647,37 @@ progress {
   }
 
   .header {
-    padding-top: 4.75rem;
+    padding-top: 3rem;
+  }
+
+  .intro__title {
+    margin-top: -2rem;
+  }
+
+  .intro__pic {
+    padding-top: 2rem;
+  }
+
+  .figure__circles {
+    display: block;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+
+  .header {
+    padding-top: 4.75rem;
+  }
+
+  .intro {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
   .intro__descr {
@@ -700,7 +688,9 @@ progress {
   }
 
   .intro__title {
+    margin-top: 0;
     max-width: 35rem;
+    padding-top: 4.491875rem;
   }
 
   .intro__list {

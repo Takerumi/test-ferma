@@ -1,8 +1,13 @@
 .intro {
   @extend .row-wrapper;
-  &__descr {
-    @include make-col(12);
+  flex-direction: column-reverse;
+  --bs-gutter-y: 0;
 
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+  }
+
+  &__descr {
     @include media-breakpoint-up(lg) {
       @include make-col(6);
     }
@@ -11,16 +16,21 @@
   &__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     line-height: 94%;
     color: $main-text-color;
-    padding-top: 4.491875rem;
+    margin-top: -2.5rem;
 
     @include media-breakpoint-up(sm) {
       font-size: 3rem;
     }
+    @include media-breakpoint-up(md) {
+      margin-top: -2rem;
+    }
     @include media-breakpoint-up(lg) {
+      margin-top: 0;
       max-width: 35rem;
+      padding-top: 4.491875rem;
     }
   }
 
@@ -35,7 +45,7 @@
   &__elem {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     line-height: 1.9375rem;
     color: $main-text-color;
     &::marker {
@@ -72,7 +82,11 @@
   }
 
   &__pic {
-    @include make-col(12);
+    padding-top: 3rem;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 2rem;
+    }
     @include media-breakpoint-up(lg) {
       @include make-col(6);
     }
