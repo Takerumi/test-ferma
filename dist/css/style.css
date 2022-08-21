@@ -632,7 +632,8 @@ progress {
   width: 100%;
   height: auto;
   max-width: 45.8125rem;
-  right: 0rem;
+  left: 0.8rem;
+  top: 5rem;
 }
 
 .figure__circles {
@@ -702,6 +703,11 @@ progress {
     font-size: 1.5rem;
   }
 
+  .figure__phone {
+    left: 1rem;
+    top: 6rem;
+  }
+
   .footer__icons {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -724,6 +730,11 @@ progress {
 
   .intro__pic {
     padding-top: 2rem;
+  }
+
+  .figure__phone {
+    left: 1rem;
+    top: 2rem;
   }
 
   .figure__circles {
@@ -802,6 +813,11 @@ progress {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 50%;
+  }
+
+  .figure__phone {
+    left: 1rem;
+    top: 5rem;
   }
 
   .footer__text {
