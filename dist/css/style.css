@@ -481,6 +481,7 @@ progress {
 }
 
 .row-wrapper,
+.footer,
 .intro {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -496,6 +497,7 @@ progress {
 }
 
 .row-wrapper > *,
+.footer > *,
 .intro > * {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -627,6 +629,49 @@ progress {
   max-width: 36.2725rem;
 }
 
+.footer {
+  min-height: 10.25rem;
+  margin: 4rem 0 0 0;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.footer__text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+  text-align: center;
+  color: #1f294a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 200%;
+  padding: 0;
+}
+
+.footer__icons {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0;
+  margin: 1rem auto 2rem auto;
+  max-width: 20rem;
+}
+
+.footer__icon {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  max-width: 3rem;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -638,6 +683,12 @@ progress {
 
   .intro__elem {
     font-size: 1.5rem;
+  }
+
+  .footer__icons {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -661,6 +712,29 @@ progress {
   .figure__circles {
     display: block;
     margin: 0 auto;
+  }
+
+  .footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .footer__text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 50%;
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .footer__icons {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 50%;
+    max-width: 15rem;
   }
 }
 
@@ -710,6 +784,10 @@ progress {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 50%;
+  }
+
+  .footer__text {
+    font-size: 1.5rem;
   }
 }
 

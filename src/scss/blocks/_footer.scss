@@ -1,0 +1,54 @@
+.footer {
+  @extend .row-wrapper;
+  min-height: 10.25rem;
+  margin: 4rem 0 0 0;
+  align-content: center;
+
+  @include media-breakpoint-up(md) {
+    justify-content: space-between;
+  }
+
+  &__text {
+    @include make-col(12);
+    text-align: center;
+    color: $main-text-color;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 200%;
+    padding: 0;
+
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+      font-size: 1.4rem;
+      text-align: left;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__icons {
+    @include make-col(12);
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 1rem auto 2rem auto;
+    max-width: 20rem;
+
+    @include media-breakpoint-up(sm) {
+      justify-content: space-between;
+    }
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+      max-width: 15rem;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    max-width: 3rem;
+  }
+}
