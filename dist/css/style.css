@@ -604,10 +604,22 @@ progress {
 .btn {
   max-width: 11.5625rem;
   height: auto;
+  -webkit-box-shadow: 0.625rem 0.625rem 1.5625rem rgba(252, 164, 206, 0.5);
+          box-shadow: 0.625rem 0.625rem 1.5625rem rgba(252, 164, 206, 0.5);
+  border-radius: 0.3125rem;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 
 .btn:hover {
   cursor: pointer;
+  -webkit-box-shadow: 0.65rem 0.65rem 1.5rem rgba(253, 132, 189, 0.5);
+          box-shadow: 0.65rem 0.65rem 1.5rem rgba(253, 132, 189, 0.5);
+}
+
+.btn:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .figure {
@@ -670,6 +682,11 @@ progress {
   width: 100%;
   height: auto;
   max-width: 3rem;
+}
+
+.footer__icon:hover {
+  -webkit-filter: contrast(175%);
+          filter: contrast(175%);
 }
 
 @media (min-width: 576px) {

@@ -51,5 +51,8 @@
     width: 100%;
     height: auto;
     max-width: 3rem;
+    &:hover {
+      filter: contrast(175%);
+    }
   }
 }
