@@ -1,8 +1,13 @@
 .header {
-  @extend .row-wrapper;
-  padding-top: 4.75rem;
+  padding: 3.75rem 0 0 0.5rem;
+  @include media-breakpoint-up(md) {
+    padding-top: 4.75rem;
+  }
   &__logo {
-    @include make-col(12);
-    align-content: start;
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 4.3125rem;
+    }
   }
 }

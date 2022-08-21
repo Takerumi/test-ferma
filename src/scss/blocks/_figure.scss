@@ -1,0 +1,51 @@
+.figure {
+  position: relative;
+  &__phone {
+    position: absolute;
+    z-index: 10;
+    top: 0rem;
+    right: 0rem;
+  }
+
+  &__blue-circle-big {
+    position: absolute;
+    z-index: 3;
+    top: 9.44875rem;
+    right: 21.489375rem;
+  }
+
+  &__green-circle-big {
+    position: absolute;
+    z-index: 2;
+    top: 9.75rem;
+    right: 7.8125rem;
+  }
+
+  &__pink-circle-big {
+    position: absolute;
+    z-index: 1;
+    top: 4.25rem;
+    right: 10.3125rem;
+  }
+
+  &__blue-circle-small {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 10.045625rem;
+  }
+
+  &__green-circle-small {
+    position: absolute;
+    z-index: 1;
+    top: 22.5rem;
+    right: 39.983125rem;
+  }
+
+  &__pink-circle-small {
+    position: absolute;
+    z-index: 1;
+    top: 39.8125rem;
+    right: 6.29rem;
+  }
+}

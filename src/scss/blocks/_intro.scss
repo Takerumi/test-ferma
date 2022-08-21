@@ -1,8 +1,8 @@
 .intro {
   @extend .row-wrapper;
-  padding-top: 1.241875rem;
   &__descr {
     @include make-col(12);
+
     @include media-breakpoint-up(lg) {
       @include make-col(6);
     }
@@ -11,10 +11,14 @@
   &__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 94%;
     color: $main-text-color;
-    padding-top: 3.25rem;
+    padding-top: 4.491875rem;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 3rem;
+    }
     @include media-breakpoint-up(lg) {
       max-width: 35rem;
     }
@@ -31,17 +35,26 @@
   &__elem {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     line-height: 1.9375rem;
     color: $main-text-color;
     &::marker {
       font-size: 1rem;
       color: $main-text-color;
     }
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1.5rem;
+    }
   }
 
   &__btn {
-    margin-top: 2.5625rem;
+    display: block;
+    margin: 2.5625rem auto 0 auto;
+
+    @include media-breakpoint-up(lg) {
+      margin: 2.5625rem 0 0 0;
+    }
   }
 
   &__secondary {
@@ -51,6 +64,11 @@
     line-height: 129%;
     color: $secondary-text-color;
     margin-top: 1rem;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
   }
 
   &__pic {
