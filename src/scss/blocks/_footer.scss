@@ -42,6 +42,7 @@
     @include media-breakpoint-up(md) {
       @include make-col(6);
       max-width: 15rem;
+      margin: 1rem 0 2rem 0;
     }
   }
 

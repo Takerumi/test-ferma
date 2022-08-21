@@ -735,6 +735,7 @@ progress {
             flex: 0 0 auto;
     width: 50%;
     max-width: 15rem;
+    margin: 1rem 0 2rem 0;
   }
 }
 
