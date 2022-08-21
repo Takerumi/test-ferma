@@ -1,14 +1,62 @@
 .intro {
+  @extend .row-wrapper;
   padding-top: 1.241875rem;
   &__descr {
+    @include make-col(12);
+    @include media-breakpoint-up(lg) {
+      @include make-col(6);
+    }
+  }
+
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 94%;
+    color: $main-text-color;
+    padding-top: 3.25rem;
+    @include media-breakpoint-up(lg) {
+      max-width: 35rem;
+    }
   }
 
   &__list {
+    padding-left: 1.2rem;
+    margin-top: 3.25rem;
+    @include media-breakpoint-up(lg) {
+      max-width: 32rem;
+    }
   }
 
   &__elem {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.9375rem;
+    color: $main-text-color;
+    &::marker {
+      font-size: 1rem;
+      color: $main-text-color;
+    }
+  }
+
+  &__btn {
+    margin-top: 2.5625rem;
+  }
+
+  &__secondary {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 129%;
+    color: $secondary-text-color;
+    margin-top: 1rem;
   }
 
   &__pic {
+    @include make-col(12);
+    @include media-breakpoint-up(lg) {
+      @include make-col(6);
+    }
   }
 }

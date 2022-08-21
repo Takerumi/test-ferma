@@ -481,6 +481,7 @@ progress {
 }
 
 .row-wrapper,
+.intro,
 .header {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -496,6 +497,7 @@ progress {
 }
 
 .row-wrapper > *,
+.intro > *,
 .header > * {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -548,16 +550,71 @@ progress {
   max-height: 64rem;
 }
 
-.title {
+.intro {
+  padding-top: 1.241875rem;
+}
+
+.intro__descr {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+}
+
+.intro__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 3rem;
   line-height: 94%;
   color: #1f294a;
+  padding-top: 3.25rem;
 }
 
-.intro {
-  padding-top: 1.241875rem;
+.intro__list {
+  padding-left: 1.2rem;
+  margin-top: 3.25rem;
+}
+
+.intro__elem {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.9375rem;
+  color: #1f294a;
+}
+
+.intro__elem::marker {
+  font-size: 1rem;
+  color: #1f294a;
+}
+
+.intro__btn {
+  margin-top: 2.5625rem;
+}
+
+.intro__secondary {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 129%;
+  color: #8f94a5;
+  margin-top: 1rem;
+}
+
+.intro__pic {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+}
+
+.btn {
+  max-width: 11.5625rem;
+  height: auto;
+}
+
+.btn:hover {
+  cursor: pointer;
 }
 
 @media (min-width: 576px) {
@@ -575,6 +632,28 @@ progress {
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+
+  .intro__descr {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .intro__title {
+    max-width: 35rem;
+  }
+
+  .intro__list {
+    max-width: 32rem;
+  }
+
+  .intro__pic {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 50%;
   }
 }
 
@@ -601,10 +680,6 @@ progress {
 
   .container {
     max-width: 1140px;
-  }
-
-  .container {
-    margin: 0 7rem;
   }
 }
 

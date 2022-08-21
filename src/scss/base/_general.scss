@@ -14,9 +14,6 @@
 .container {
   @include make-container();
   @include make-max-width-container();
-  @include media-breakpoint-up(xl) {
-    margin: 0 7rem;
-  }
 }
 
 // Общий класс для строк
